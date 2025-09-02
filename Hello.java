@@ -52,7 +52,7 @@ class Hello {
     byte k = (byte) a1;
     System.out.println(k);
 
-    // type convertion
+    // type conversion
     byte number21 = 10;
     byte number22 = 30;
     int result2 = number21 * number22;
