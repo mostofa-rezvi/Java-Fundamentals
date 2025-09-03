@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.math.BigInteger;
 
 public class DemoOne {
   public static void main(String[] args) {
@@ -79,15 +80,40 @@ public class DemoOne {
     // -------------------------
 
     // 8
-    int number1;
-    int number2;
+    // int number1;
+    // int number2;
+    // Scanner scanner = new Scanner(System.in);
+    // System.out.print("Enter a number: ");
+    // number1 = scanner.nextInt();
+    // System.out.print("Enter another number: ");
+    // number2 = scanner.nextInt();
+    // int result = number1 + number2;
+    // System.out.println("Sum of given numbers: " + result);
+    // -------------------------
+
+    // 9
+    String number1;
+    String number2;
     Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter a number: ");
-    number1 = scanner.nextInt();
-    System.out.print("Enter another number: ");
-    number2 = scanner.nextInt();
-    int result = number1 + number2;
-    System.out.println("Sum of given numbers: " + result);
+    System.out.print("Enter first large number: ");
+    number1 = scanner.nextLine();
+    System.out.print("Enter second large number: ");
+    number2 = scanner.nextLine();
+    BigInteger first = new BigInteger(number1);
+    BigInteger second = new BigInteger(number2);
+    BigInteger result;
+    result = first.add(second);
+    System.out.println("Sum of two large numbers: " + result);
+    // -------------------------
+
+    // 10
+    // boolean condition = false;
+    // if (condition) {
+    //   System.out.println("Condition is okay.");
+    // } else {
+    //   System.out.println("Condition has problems.");
+    // }
+    // -------------------------
 
   }
 }
