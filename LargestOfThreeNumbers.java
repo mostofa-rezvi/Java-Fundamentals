@@ -9,14 +9,14 @@ public class LargestOfThreeNumbers {
     int z;
 
     System.out.println("Find Large number out of 3 number.");
-    Scanner scanner = new Scanner(System.in);
-
-    System.out.print("Enter First Number: ");
-    x = scanner.nextInt();
-    System.out.print("Enter Second Number: ");
-    y = scanner.nextInt();
-    System.out.print("Enter Third Number: ");
-    z = scanner.nextInt();
+    try (Scanner scanner = new Scanner(System.in)) {
+      System.out.print("Enter First Number: ");
+      x = scanner.nextInt();
+      System.out.print("Enter Second Number: ");
+      y = scanner.nextInt();
+      System.out.print("Enter Third Number: ");
+      z = scanner.nextInt();
+    }
 
     if (x > y && x > z) {
       System.out.println("First Number is Largest.");

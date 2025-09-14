@@ -7,12 +7,12 @@ public class SwapNumbers2 {
     int x;
     int y;
 
-    Scanner scanner = new Scanner(System.in);
-
-    System.out.println("Enter the value for x: ");
-    x = scanner.nextInt();
-    System.out.println("Enter the value for y: ");
-    y = scanner.nextInt();
+    try (Scanner scanner = new Scanner(System.in)) {
+      System.out.println("Enter the value for x: ");
+      x = scanner.nextInt();
+      System.out.println("Enter the value for y: ");
+      y = scanner.nextInt();
+    }
 
     System.out.println("Before swapping, x: " + x + " and y: " + y);
 

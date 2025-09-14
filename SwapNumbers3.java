@@ -6,12 +6,12 @@ public class SwapNumbers3 {
   public static void main(String[] args) {
     int x, y, temp;
 
-    Scanner scanner = new Scanner(System.in);
-
-    System.out.println("Enter a value for x:");
-    x = scanner.nextInt();
-    System.out.println("Enter a value for y:");
-    y = scanner.nextInt();
+    try (Scanner scanner = new Scanner(System.in)) {
+      System.out.println("Enter a value for x:");
+      x = scanner.nextInt();
+      System.out.println("Enter a value for y:");
+      y = scanner.nextInt();
+    }
 
     System.out.println("Before Swapping, x: " + x + " and y: " + y);
 

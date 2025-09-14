@@ -8,13 +8,13 @@ public class AddNumbers {
     int y;
     int z;
 
-    Scanner scanner = new Scanner(System.in);
-
-    System.out.println("Enter two integers to calculate their sumation.");
-    System.out.print("First Number: ");
-    x = scanner.nextInt();
-    System.out.print("Second Number: ");
-    y = scanner.nextInt();
+    try (Scanner scanner = new Scanner(System.in)) {
+      System.out.println("Enter two integers to calculate their sumation.");
+      System.out.print("First Number: ");
+      x = scanner.nextInt();
+      System.out.print("Second Number: ");
+      y = scanner.nextInt();
+    }
 
     z = x + y;
     System.out.println("Sum of entered integers = " + z);

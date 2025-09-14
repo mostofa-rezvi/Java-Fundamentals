@@ -94,11 +94,12 @@ public class DemoOne {
     // 9
     String number1;
     String number2;
-    Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter first large number: ");
-    number1 = scanner.nextLine();
-    System.out.print("Enter second large number: ");
-    number2 = scanner.nextLine();
+    try (Scanner scanner = new Scanner(System.in)) {
+      System.out.print("Enter first large number: ");
+      number1 = scanner.nextLine();
+      System.out.print("Enter second large number: ");
+      number2 = scanner.nextLine();
+    }
     BigInteger first = new BigInteger(number1);
     BigInteger second = new BigInteger(number2);
     BigInteger result;

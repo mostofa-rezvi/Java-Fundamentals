@@ -26,6 +26,10 @@ public class Operators {
     boolean result6 = m <= n;
     System.out.println(result6);
 
-    // done 1 hour 35 min.
+    // AND = &&
+    // OR = ||
+    // NOT = !
+
+    
   }
 }

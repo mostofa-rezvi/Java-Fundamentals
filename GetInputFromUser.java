@@ -8,18 +8,19 @@ public class GetInputFromUser {
     float b;
     String s;
 
-    Scanner scanner = new Scanner(System.in);
+    try (Scanner scanner = new Scanner(System.in)) {
+      System.out.println("Enter a string.");
+      s = scanner.nextLine();
+      System.out.println("You entered string: " + s);
 
-    System.out.println("Enter a string.");
-    s = scanner.nextLine();
-    System.out.println("You entered string: " + s);
+      System.out.println("Enter a integer.");
+      a = scanner.nextInt();
+      System.out.println("You entered integer: " + a);
 
-    System.out.println("Enter a integer.");
-    a = scanner.nextInt();
-    System.out.println("You entered integer: " + a);
+      System.out.println("Enter a float.");
+      b = scanner.nextFloat();
+    }
 
-    System.out.println("Enter a float.");
-    b = scanner.nextFloat();
     System.out.println("You entered float: " + b);
   }
 }

@@ -9,12 +9,12 @@ public class AddLargeNumbers {
     String number2;
 
     System.out.println("Adding Two Large Numbers,");
-    Scanner scanner = new Scanner(System.in);
-
-    System.out.print("Enter First Large Number: ");
-    number1 = scanner.nextLine();
-    System.out.print("Enter Second Large Number: ");
-    number2 = scanner.nextLine();
+    try (Scanner scanner = new Scanner(System.in)) {
+      System.out.print("Enter First Large Number: ");
+      number1 = scanner.nextLine();
+      System.out.print("Enter Second Large Number: ");
+      number2 = scanner.nextLine();
+    }
 
     BigInteger first = new BigInteger(number1);
     BigInteger second = new BigInteger(number2);

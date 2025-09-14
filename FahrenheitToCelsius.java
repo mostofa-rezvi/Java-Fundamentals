@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class FahrenheitToCelsius {
   public static void main(String[] args) {
     float temperature;
-    Scanner scanner = new Scanner(System.in);
-
-    System.out.println("Enter temperature in Fahrenheit: ");
-    temperature = scanner.nextInt();
+    try (Scanner scanner = new Scanner(System.in)) {
+      System.out.println("Enter temperature in Fahrenheit: ");
+      temperature = scanner.nextInt();
+    }
 
     temperature = ((temperature - 32) * 5) / 9;
 
