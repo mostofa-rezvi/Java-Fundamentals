@@ -153,5 +153,111 @@ public class DemoTwo {
         // System.out.println("You failed in the exam and your grade is: " + grade);
         // }
         // have some errors.
+
+        // 13
+        // int x;
+        // try (Scanner scanner = new Scanner(System.in)) {
+        // System.out.println("Enter an integer to check if it is odd or even number:
+        // ");
+        // x = scanner.nextInt();
+        // }
+        // if (x % 2 == 0) {
+        // System.out.println(x + " - this is an even number.");
+        // } else {
+        // System.out.println(x + " - this is an odd number.");
+        // }
+
+        // 14
+        // int a;
+        // int b;
+        // int factorial = 1;
+        // try (Scanner scanner = new Scanner(System.in)) {
+        // System.out.println("Enter an integer to calculate it's factorial: ");
+        // a = scanner.nextInt();
+        // }
+        // if (a < 0) {
+        // System.out.println("Number should be non-negative.");
+        // } else {
+        // for (b = 1; b <= a; b++) {
+        // factorial = factorial * b;
+        // }
+        // System.out.println("Factorial of " + a + " is " + factorial);
+        // }
+
+        // 14 : factorial for large number
+        // int number;
+        // int calculation;
+        // BigInteger increasing = new BigInteger("1");
+        // BigInteger factorial = new BigInteger("1");
+        // try (Scanner scanner = new Scanner(System.in)) {
+        // System.out.println("Input an integer: ");
+        // number = scanner.nextInt();
+        // }
+        // for (calculation = 1; calculation <= number; calculation++) {
+        // factorial = factorial.multiply(increasing);
+        // increasing = increasing.add(BigInteger.ONE);
+        // }
+        // System.out.println(number + "! = " + factorial);
+
+        // 15
+        // String s1;
+        // String s2;
+        // try (Scanner scanner = new Scanner(System.in)) {
+        // System.out.println("Enter the first String: ");
+        // s1 = scanner.nextLine();
+        // System.out.println("Enter the second String: ");
+        // s2 = scanner.nextLine();
+        // }
+        // if (s1.compareTo(s2) > 0) {
+        // System.out.println("First String is greater than Second String.");
+        // } else if (s1.compareTo(s2) < 0) {
+        // System.out.println("First String is smaller than Second String.");
+        // } else {
+        // System.out.println("Both Strings are equal.");
+        // }
+
+        // // 16
+        // int a;
+        // for (a = 1; a <= 5; a++) {
+        // System.out.println(a);
+        // }
+
+        // 17
+        // int row;
+        // int numberOfStars;
+        // for (row = 1; row <= 10; row++) {
+        // for (numberOfStars = 1; numberOfStars <= row; numberOfStars++) {
+        // System.out.print("*");
+        // }
+        // System.out.println();
+        // }
+
+        // 18
+
+        // 19
+        // int n;
+        // try (Scanner scanner = new Scanner(System.in)) {
+        // System.out.println("Input an integer: ");
+
+        // while ((n = scanner.nextInt()) != 0) {
+        // System.out.println("You entered: " + n);
+        // System.out.println("Input an integer: ");
+        // }
+        // }
+        // System.out.println("Out of loop.");
+
+        // 20
+        // int number;
+        // int reverse = 0;
+        // try (Scanner scanner = new Scanner(System.in)) {
+        //     System.out.println("Enter the number to reverse: ");
+        //     number = scanner.nextInt();
+        // }
+        // while (number != 0) {
+        //     reverse = reverse * 10;
+        //     reverse = reverse + number % 10;
+        //     number = number / 10;
+        // }
+        // System.out.println("Reverse of entered number is: " + reverse);
     }
 }
