@@ -1,5 +1,5 @@
-import java.math.BigInteger;
-import java.util.Scanner;
+// import java.math.BigInteger;
+// import java.util.Scanner;
 
 public class DemoThree {
     public static void main(String[] args) {
@@ -256,17 +256,17 @@ public class DemoThree {
         // System.out.println("Out of loop.");
 
         // 20
-        int number;
-        int reverse = 0;
-        System.out.print("Enter the number to reverse: ");
-        try (Scanner scanner = new Scanner(System.in)) {
-            number = scanner.nextInt();
-        }
-        while (number != 0) {
-            reverse = reverse * 10;
-            reverse = reverse + number % 10;
-            number = number / 10;
-        }
-        System.out.println("Reverse of the entered number is: " + reverse);
+        // int number;
+        // int reverse = 0;
+        // System.out.print("Enter the number to reverse: ");
+        // try (Scanner scanner = new Scanner(System.in)) {
+        //     number = scanner.nextInt();
+        // }
+        // while (number != 0) {
+        //     reverse = reverse * 10;
+        //     reverse = reverse + number % 10;
+        //     number = number / 10;
+        // }
+        // System.out.println("Reverse of the entered number is: " + reverse);
     }
 }
