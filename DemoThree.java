@@ -184,15 +184,15 @@ public class DemoThree {
         // int factorial = 1;
         // System.out.println("Enter an integer to calculate it's factorial: ");
         // try (Scanner scanner = new Scanner(System.in)) {
-        //     a = scanner.nextInt();
+        // a = scanner.nextInt();
         // }
         // if (a < 0) {
-        //     System.out.println("Number should be non-negative.");
+        // System.out.println("Number should be non-negative.");
         // } else {
-        //     for (b = 1; b <= a; b++) {
-        //         factorial = factorial * b;
-        //     }
-        //     System.out.println("Factorial of " + a + " is = " + factorial);
+        // for (b = 1; b <= a; b++) {
+        // factorial = factorial * b;
+        // }
+        // System.out.println("Factorial of " + a + " is = " + factorial);
         // }
 
         // factorial for large number
@@ -211,6 +211,62 @@ public class DemoThree {
         // System.out.println(a + "! = " + factorial);
 
         // 15
-        
+        // String one;
+        // String two;
+        // try (Scanner scanner = new Scanner(System.in)) {
+        // System.out.println("Enter two Strings: ");
+        // one = scanner.nextLine();
+        // two = scanner.nextLine();
+        // }
+        // if (one.compareTo(two) > 0) {
+        // System.out.println("First String is grater than Second String.");
+        // } else if (one.compareTo(two) < 0) {
+        // System.out.println("First String is smaller than Second String");
+        // } else {
+        // System.out.println("Both Strings are equal.");
+        // }
+
+        // 16
+        // int c;
+        // for (c = 1; c <= 4; c++) {
+        // System.out.println(c);
+        // }
+
+        // 17
+        // int row;
+        // int numberOfStars;
+        // for (row = 1; row <= 10; row++) {
+        // for (numberOfStars = 1; numberOfStars <= row; numberOfStars++) {
+        // System.out.print("*");
+        // }
+        // System.out.println();
+        // }
+
+        // 18
+
+        // 19
+        // int n;
+        // try (Scanner scanner = new Scanner(System.in)) {
+        // System.out.print("Input an Integer: ");
+        // while ((n = scanner.nextInt()) != 0) {
+        // System.out.println("You entered: " + n);
+        // System.out.print("Input an integer: ");
+        // }
+        // }
+        // System.out.println("Out of loop.");
+
+        // 20
+        int number;
+        int reverse = 0;
+        System.out.print("Enter the number to reverse: ");
+        try (Scanner scanner = new Scanner(System.in)) {
+            number = scanner.nextInt();
+        }
+        while (number != 0) {
+            reverse = reverse * 10;
+            reverse = reverse + number % 10;
+            number = number / 10;
+        }
+        System.out.println("Reverse of the entered number is: " + reverse);
     }
 }
